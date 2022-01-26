@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techshelter</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body style="background-color: #f4971e;">
+
+  <header id="header">  
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="sect">
+    <p class="tech" id='title'>
+      Techshelter
+    </p>
+    <div class="container">
+      <img src="BATIMENTS@4x.png" id="building"> 
+    </div>
+    <div class="river">
+      <img src="VILLE@4x.png" id="river"> 
+    </div>
+
+    <div class="bridge">
+      <img src="MAT@4x.png" id="bridge">  
+    </div>
+    <div class="chauve" style="width:100%; z-index: 20; width: 100%; position: absolute;">
+      <img src="625g83-unscreen.gif" alt="" style="width: 150px;  height: 150px; margin-left: 200px; margin-bottom: 420px;">
+    </div>
+    <div class="my-orange">
+      <img src="ORANGE@4x.png" id="stars"> 
+    </div>
+    
+    <div class="cursor"></div>
+    
+  </section>
+  <div class="sec">
+    <h2>parallax scrolling</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+  </div>
+  
+  <script>
+    let title = document.getElementById('title')
+    
+    let stars = document.getElementById('stars');
+let river = document.getElementById('river')
+let building = document.getElementById('building')
+let bridge = document.getElementById('bridge')
+let titleTop = parseInt(getComputedStyle(title).top.replace('px', ''))
+let riverTop = parseInt(getComputedStyle(river).bottom.replace('px', ''))
+let buildingTop = parseInt(getComputedStyle(building).marginTop.replace('px', ''))
+const first_mt = parseInt(getComputedStyle(stars).marginTop.replace('px', ''))
+    window.addEventListener('scroll', function() {
+      let value = window.scrollY;
+      stars.style.marginTop = first_mt+40+(value * 4) + 'px'; })
+let bridgeTop = parseInt(getComputedStyle(bridge).marginBottom.replace('px', ''))
+window.addEventListener('scroll', function(){
+  let value = window.scrollY
+  title.style.top = titleTop + value*1.2 + 'px'
+  river.style.bottom = riverTop + value*0.1 + 'px'
+  building.style.marginTop = buildingTop + value*0.4 + 'px'
+  bridge.style.marginBottom = bridgeTop - value*0.5 + 'px'
+})
+  </script>
+</body>
+<script src="./anim.js"></script>
+</html>
