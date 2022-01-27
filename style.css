@@ -130,7 +130,7 @@ section::before{
   height: 80%;
   margin-top: -18vh;
 }
-.river{
+.rivers{
   z-index: 3;
   position:absolute;
   width: 100%;
@@ -140,11 +140,11 @@ section::before{
   height:100vh;
   bottom: -2vh;
 }
-.river img{
+.rivers img{
   width: 100vw;
   height: 60%;
 }
-.bridge{
+.bridges{
   z-index: 4;
   position:absolute;
   width: 100%;
@@ -154,7 +154,7 @@ section::before{
   height:100vh;
   bottom: 0;
 }
-.bridge img{
+.bridges img{
   width: 21%;
   margin-bottom: -2vh;
   margin-left: -5vw;
