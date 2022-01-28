@@ -20,9 +20,7 @@
   </header>
 
   <div style="position:relative">
-    <span class="cursor"></span>
-
-      <section class="sects">
+      <section class="sects inverse">
         <p class="tech title">
           Techshelter
         </p>
@@ -49,7 +47,7 @@
       
       </section>
 
-      <section class="sect" style="position: absolute; top: 0;">
+      <section class="sect prime" style="position: absolute; top: 0;">
         <p class="tech title">
           Techshelter
         </p>
@@ -73,9 +71,9 @@
           <img src="" alt="">
         </div>
         
-        <div class="cursor"></div>
         
       </section>
+      <div class="cursor"></div>
 </div>
   <div class="sec">
     <h2>parallax scrolling</h2>
@@ -167,6 +165,34 @@
 
         })
       })
+
+      const cursor = document.querySelector('.cursor')
+      const inverse = document.querySelector('.inverse')
+      const prime = document.querySelector('.prime')
+
+      console.log(inverse)
+
+      inverse.style.setProperty('--x', '0')
+      inverse.style.setProperty('--y', '0')
+      window.addEventListener('mousemove', function(event) {
+        const x = event.clientX
+        const y = event.clientY
+
+        cursor.style.left = `${x - 50}px`
+        cursor.style.top = `${y - 50}px`
+      })
+
+      prime.addEventListener('mousemove', function(event) {
+        const x = event.offsetX
+        const y = event.offsetY
+
+        console.log(cursor.style.top, cursor.style.left)
+        inverse.style.setProperty('--x', `${x}px`)
+        inverse.style.setProperty('--y', `${y}px`)
+        // inverse.style.setProperty('--x', `${cursor.style.left}px`)
+        // inverse.style.setProperty('--y', `${cursor.style.top}px`)
+      })
+
     })
   
   </script>

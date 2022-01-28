@@ -92,7 +92,7 @@ section::before{
   height: 100px;
   background: linear-gradient(to top, rgb(95, 95, 242),transparent);
   z-index: 10 ;
-  clip-path: circle(40px at center);
+  /* clip-path: circle(40px at center); */
 }
 
 .cursor
@@ -100,16 +100,17 @@ section::before{
   position: fixed;
   top: 0;
   left: 0;
-  width: 40px;
-  height: 40px;
-  background: red;
+  width: 100px;
+  height: 100px;
+  /* background: red; */
   border-radius: 50%;
   pointer-events: none;
   transition: transform .3s ease;
+  z-index: 30;
 }
 
-section .sects:hover ~ .cursor  {
-transform: scale(2);
+.prime:hover ~ .cursor  {
+  transform: scale(2);
 }
 
 
@@ -203,4 +204,10 @@ transform: scale(2);
   z-index: 20;
   width: 100%;
   position: absolute;
+}
+
+.inverse {
+  z-index: 30;
+  clip-path: circle(100px at var(--x) var(--y));
+  box-shadow: 0 0 5px 10px #555;
 }
