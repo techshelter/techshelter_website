@@ -20,55 +20,62 @@
   </header>
 
   <div style="position:relative">
-  <section class="sect">
-    <p class="tech title">
-      Techshelter
-    </p>
-    <div class="container">
-      <img src="BATIMENTS@4x.png" class="building"> 
-    </div>
-    <div class="rivers">
-      <img src="VILLE@4x.png" class="river"> 
-    </div>
+    <span class="cursor"></span>
 
-    <div class="bridges">
-      <img src="MAT@4x.png" class="bridge">  
-    </div>
-    <div class="chauve" style="width:100%; z-index: 20; width: 100%; position: absolute;">
-      <img src="animiertes-gif-von-online-umwandeln-de.gif" alt="" style="width: 50px;  height: 60px; margin-left: 275px; margin-bottom: 200px;">
-    </div>
-    <div class="my-orange">
-      <img src="ORANGE@4x.png" class="stars"> 
-    </div>
-    
-    <div class="cursor"></div>
-    
-  </section>
+      <section class="sects">
+        <p class="tech title">
+          Techshelter
+        </p>
+        <div class="container">
+          <img src="binari_city/BATIMENTS BIN@4x.png" class="building"> 
+        </div>
+        <div class="rivers">
+          <img src="binari_city/VILLE BIN@4x.png" class="river"> 
+        </div>
 
-  <section class="sect" style="position: absolute; top: 0;">
-    <p class="tech title">
-      Techshelter
-    </p>
-    <div class="container">
-      <img src="BATIMENTS@4x.png" class="building"> 
-    </div>
-    <div class="rivers">
-      <img src="VILLE@4x.png" class="river"> 
-    </div>
+        <div class="bridges">
+          <img src="binari_city/MAT BIN@4x.png" class="bridge">  
+        </div>
+        <div class="chauve">
+          <img src="animiertes-gif-von-online-umwandeln-de.gif" alt="" style="width: 50px;  height: 60px; margin-left: 275px; margin-bottom: 200px;">
+        </div>
+        <div class="my-orange">
+          <img src="binari_city/CONTINU BIN@4x.png" class="stars"> 
+        </div>
+        <!-- <div class="cloud" >
+          <img src="binari_city/NUAGES BIN@4x.png" ;">
+        </div> -->
+        
+      
+      </section>
 
-    <div class="bridges">
-      <img src="MAT@4x.png" class="bridge">  
-    </div>
-    <div class="chauve" style="width:100%; z-index: 20; width: 100%; position: absolute;">
-      <img src="animiertes-gif-von-online-umwandeln-de1.gif" alt="" style="width: 90px;  height: 80px; margin-left: 200px; margin-bottom: 420px;">
-    </div>
-    <div class="my-orange">
-      <img src="ORANGE@4x.png" class="stars"> 
-    </div>
-    
-    <div class="cursor"></div>
-    
-  </section>
+      <section class="sect" style="position: absolute; top: 0;">
+        <p class="tech title">
+          Techshelter
+        </p>
+        <div class="container">
+          <img src="BATIMENTS@4x.png" class="building"> 
+        </div>
+        <div class="rivers">
+          <img src="VILLE@4x.png" class="river"> 
+        </div>
+
+        <div class="bridges">
+          <img src="MAT@4x.png" class="bridge">  
+        </div>
+        <div class="chauve">
+          <img src="animiertes-gif-von-online-umwandeln-de1.gif" alt="" style="width: 90px;  height: 80px; margin-left: 200px; margin-bottom: 420px;">
+        </div>
+        <div class="my-orange">
+          <img src="ORANGE@4x.png" class="stars"> 
+        </div>
+        <div>
+          <img src="" alt="">
+        </div>
+        
+        <div class="cursor"></div>
+        
+      </section>
 </div>
   <div class="sec">
     <h2>parallax scrolling</h2>
@@ -124,6 +131,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       let titles = document.querySelectorAll('.title')  
+      let chauves = document.querySelectorAll('.chauve')  
       let starss = document.querySelectorAll('.stars')
       let rivers = document.querySelectorAll('.river')
       let buildings = document.querySelectorAll('.building')
