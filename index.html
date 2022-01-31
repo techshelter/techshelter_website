@@ -20,6 +20,7 @@
   </header>
 
   <div style="position:relative">
+    <div class="cursor"></div>  
       <section class="sects inverse">
         <p class="tech title">
           Techshelter
@@ -35,14 +36,14 @@
           <img src="binari_city/MAT BIN@4x.png" class="bridge">  
         </div>
         <div class="chauve">
-          <img src="animiertes-gif-von-online-umwandeln-de.gif" alt="" style="width: 50px;  height: 60px; margin-left: 275px; margin-bottom: 200px;">
+          <img src="animiertes-gif-von-online-umwandeln-de.gif" alt="" >
         </div>
         <div class="my-orange">
           <img src="binari_city/CONTINU BIN@4x.png" class="stars"> 
         </div>
-        <!-- <div class="cloud" >
-          <img src="binari_city/NUAGES BIN@4x.png" ;">
-        </div> -->
+        <div class="cloud" >
+          <img src="binari_city/NUAGES BIN@4x.png" ;>
+        </div>
         
       
       </section>
@@ -62,7 +63,7 @@
           <img src="MAT@4x.png" class="bridge">  
         </div>
         <div class="chauve">
-          <img src="animiertes-gif-von-online-umwandeln-de1.gif" alt="" style="width: 90px;  height: 80px; margin-left: 200px; margin-bottom: 420px;">
+          <img src="animiertes-gif-von-online-umwandeln-de1.gif" alt="" >
         </div>
         <div class="my-orange">
           <img src="ORANGE@4x.png" class="stars"> 
@@ -70,10 +71,13 @@
         <div>
           <img src="" alt="">
         </div>
-        
+
+        <div class="cloud" >
+          <img src="NUAGES@4x.png" ;>
+        </div>
         
       </section>
-      <div class="cursor"></div>
+      
 </div>
   <div class="sec">
     <h2>parallax scrolling</h2>
@@ -140,6 +144,7 @@
       let buildingTop = parseInt(getComputedStyle(buildings[0]).marginTop.replace('px', ''))
       let bridgeTop = parseInt(getComputedStyle(bridges[0]).marginBottom.replace('px', ''))
       const first_mt = parseInt(getComputedStyle(starss[0]).marginTop.replace('px', ''))
+      const second_mt = parseInt(getComputedStyle(chauves[0]).marginTop.replace('px', ''))
       window.addEventListener('scroll', function() {
         window.addEventListener('scroll', function(){
           let value = window.scrollY
@@ -163,6 +168,10 @@
             stars.style.marginTop = first_mt+40+(value * 4) + 'px'
           })
 
+          chauves.forEach((chauves) => {
+            chauves.style.marginTop = second_mt+40+(value * 4) + 'px'
+          })
+
         })
       })
 
@@ -178,15 +187,18 @@
         const x = event.clientX
         const y = event.clientY
 
-        cursor.style.left = `${x - 50}px`
-        cursor.style.top = `${y - 50}px`
+        cursor.style.left = '${x - 50}px'
+        cursor.style.top = '${y - 50}px'
       })
 
       prime.addEventListener('mousemove', function(event) {
-        const x = event.offsetX
-        const y = event.offsetY
-
-        console.log(cursor.style.top, cursor.style.left)
+        // const x = event.offsetX
+        // const y = event.offsetY
+        // const x = event.pageX
+        // const y = event.pageY
+        const x = event.clientX
+        const y = event.clientY
+        // console.log(cursor.style.top, cursor.style.left)
         inverse.style.setProperty('--x', `${x}px`)
         inverse.style.setProperty('--y', `${y}px`)
         // inverse.style.setProperty('--x', `${cursor.style.left}px`)
