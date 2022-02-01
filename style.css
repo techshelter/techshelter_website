@@ -94,8 +94,13 @@ body {
   /* background: red; */
   border-radius: 50%;
   pointer-events: none;
-  transition: transform .2s ease;
+  cursor: none;
   z-index: 30;
+}
+
+.hide-cursor
+{
+  cursor: none;
 }
 
 .cloud
@@ -149,6 +154,11 @@ body {
   width: 100%;
 }
 
+#primary_id
+{
+  background-color: #f4971e;
+  position: relative;
+}
 
 .prime:hover ~ .cursor  {
   transform: scale(2);
