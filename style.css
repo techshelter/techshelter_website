@@ -10,7 +10,6 @@
 
 body {
   overflow-x: hidden;
-  background: #f4971e;
   min-height: 100vh;  
 }
 
@@ -50,8 +49,8 @@ body {
 #header ul li a:hover ,
 #header ul li a.active
 {
-  background: rgb(255, 127, 127);
-  color: rgb(255, 81, 0);
+  background-color: white;
+  color: gray;
 }
 
 .bridges{
@@ -154,6 +153,14 @@ body {
   width: 100%;
 }
 
+.p_title
+{
+  text-align: center;
+  color:#251E85;;
+  font-size: 25px;
+  font-weight:bold ;
+}
+
 #primary_id
 {
   background-color: #f4971e;
@@ -182,21 +189,9 @@ body {
 .sec{
   position: relative;
   padding: 100px;
-  background: rgb(95, 95, 242);
+  background: white;
 }
 
-.sec h2{
-  font-size: 3.5em;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.sec p 
-{
-  font-size: 1em;
-  color: white;
-  
-}
 
 section {
   position: relative;
@@ -218,11 +213,323 @@ section::before{
   left: 0;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to top, rgb(95, 95, 242),transparent);
+  background: linear-gradient(to top, rgb(255, 255, 255),transparent);
   z-index: 10 ;
   /* clip-path: circle(40px at center); */
 }
 
+.section_principal
+{
+  display: flex;
+}
+
+.section_principal p
+{
+  font-size: 15px;
+  color: #151439;
+  width: 450px;
+  margin-top: 30px;
+}
+
+.section_principal svg
+{
+ width: 40%;
+ height: 30%;
+ margin-left: 150px;
+ 
+}
+
+.second_section
+{
+  display: flex;
+  margin-top: 40vh;
+}
+.second_section h3
+{
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+}
+.second_section h2
+{
+  color: #251E85;
+  
+}
+
+.chips{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+}
+
+.service1
+{
+  display: flex;
+  margin-left: 35vw;
+  margin-top: 10vh;
+}
+
+.services_it
+{
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  margin-right: 3vw;
+  text-align: center;
+  font-size: 13px;
+  width: 20vw;
+  height: 50vh;
+  
+}
+
+.services_it img
+{
+  width: 50px ;
+  height: 50px;
+  
+}
+
+.service_integration
+{
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 13px;
+  width: 20vw;
+  height: 50vh;
+ 
+}
+.service_integration img
+{
+  width: 50px ;
+  height: 50px;
+}
+
+.service2
+{
+  display: flex;
+  margin-left: 35vw;
+}
+.service_web360 img
+{
+  width: 50px ;
+  height: 50px;
+}
+
+.service_web360
+{
+  margin-top: 10vh;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  margin-right: 3vw;
+  text-align: center;
+  font-size: 13px;
+  width: 20vw;
+  height: 50vh;
+}
+.service_expertise img
+{
+  width: 50px ;
+  height: 50px;
+}
+
+.service_expertise
+{
+  margin-top: 10vh;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 13px;
+  width: 20vw;
+  height: 50vh;
+}
+
+.theme_text span
+{
+  color: rgb(226, 60, 165);
+}
+.theme_text button
+{
+  border: none;
+  color: white;
+  padding: 10px 50px 10px 50px;
+  border-radius: 10px;
+  background-color:#FF4E4E ;
+  margin-top: 10px;
+}
+
+.theme_text button:hover
+{
+ background-color: red;
+}
+
+.third_section h2
+{
+  text-align: center;
+  margin-top: 40vh;
+}
+.theme{
+  position: relative ;
+  display: flex;
+}
+
+.text_image img
+{
+  width: 25vw;
+  height: 25vw;
+}
+.theme_text
+{
+  margin-right: 10vw;
+  margin-left:15vw ;
+  margin-top: 100px;
+}
+
+.theme_text p
+{
+  font-size: 20px;
+}
+
+.partner h2
+{
+  text-align: center;
+  margin-bottom: 10vh  ;
+}
+.first_partner
+{
+  position: absolute;
+  display: flex;
+  height: 65px;
+  width: 65px;
+  margin-left: 16vw;
+}
+
+.second_partner
+{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin-left: 16vw;
+  margin-top: 30vh;
+}
+
+.second_partner img
+{
+  margin-right: 5vw;
+
+}
+
+.mediafrance
+{
+  height: 40px;
+}
+
+.first_partner img
+{
+  margin-right: 5vw;
+}
+.contacting
+{
+  position: relative;
+  display: flex;
+  margin-left: 10vw;
+  margin-top: 10vh;
+}
+.contacting img
+{
+  width: 25vw;
+  height: 40vh;
+  margin-right: 10vw;
+  margin-top: 15vh;
+}
+
+.contact p
+{
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 30px;
+  font-weight:bold ;
+  
+}
+
+.myform input
+{
+  border-radius: 5px;
+  padding: 10px;
+  width: 35vw;
+  margin-top: 3vh;
+  border-color: gray;
+}
+
+.form_last input
+{
+  border-radius: 5px;
+  padding: 10px;
+  width: 35vw;
+}
+
+textarea
+{
+  border-radius: 10px;
+  margin-top: 3vh;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.form_email input
+{
+  border-radius: 5px;
+  padding: 10px;
+  width: 35vw;
+}
+form button
+{
+  border: none;
+  color: white;
+  padding: 10px 50px 10px 50px;
+  border-radius: 10px;
+  background-color:#FF4E4E ;
+  margin-top: 10px;
+}
+.footer1
+{
+  position: relative;
+  display: flex;
+}
+.footer1_items
+{
+  display: flex;
+  margin-top: 1vh;
+}
+.footer1_items a
+{
+  text-decoration: none;
+  color: gray;
+}
+.footer1_items a:hover
+{
+  color:red;
+}
+.footer1_items
+{
+  text-indent: 50px;
+}
+ .footer1 img
+{
+width: 150px;
+height: 50px;
+margin-right: 30vw;
+margin-left: 10vw;
+}
+.footer2
+{
+  position: absolute;
+  display: flex;
+  margin-right: 100px;
+}
+.footer2 img
+{
+  width: 30px;
+  height: 30px;
+  margin: 1em;
+}
 .tech 
 {
   position: absolute;
@@ -234,11 +541,3 @@ section::before{
   top: 20vh;
   font-weight: bolder;
 }
-
-
-
-
-
-
-
-
