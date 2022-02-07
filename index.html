@@ -14,18 +14,19 @@
   <header id="header">  
     <ul>
       <li><a href="#" class="active">Acceuil</a></li>
-      <li><a href="#">Qui sommes-nous ?</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">A venir</a></li>
+      <li><a href="#Qui_sommes_nous_?">Qui sommes-nous ?</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#A_venir">A venir</a></li>
     </ul>
+      <a href="#nous_contacter" class="contactli">Nous contacter</a>
   </header>
  
   <div  id="primary_id">
     <div class="cursor"></div>   
       <section class="sects inverse">
-        <p class="tech title">
-          Techshelter
-        </p>
+         <div class="titles">
+            <img src="images/Logo_TS-01.png" alt="" class="title">
+         </div>
         <div class="container">
           <img src="binari_city/BATIMENTS BIN@4x.png" class="building"> 
         </div>
@@ -50,9 +51,9 @@
       </section>
 
       <section class="sect prime" style="position: absolute; top: 0;">
-        <p class="tech title">
-          Techshelter
-        </p>
+         <div class="titles">
+            <img src="images/Logo_TS-01.png" alt="" class="title">
+         </div>
         <div class="container">
           <img src="normal_images/BATIMENTS@4x.png" class="building"> 
         </div>
@@ -81,7 +82,7 @@
       
    </div>
   <div class="sec">
-    <span class="p_title" >
+    <span class="p_title" id="Qui_sommes_nous_?" >
       Qui sommes nous ?
     </span>
       <div class="section_principal">
@@ -762,7 +763,7 @@
           </svg>
       </div>
 
-      <div class="second_section">
+      <div class="second_section" id="services">
         <h2>
           Services
         </h2>
@@ -798,7 +799,8 @@
 
                <div class="service_expertise">
                   <img src="icon/cloud.png" alt="">
-                  <h3>Azure</h3>
+                  <h3>Cloud</h3>
+                  <p>Azure </p>
                   <p>AWS </p>
                   <p>Google cloud</p>
                   <p> Consulting optimisation devops</p>
@@ -809,11 +811,11 @@
         </div>
       </div>
 
-      <div class="third_section">
-         <h2>Obtenez vote site</h2>
+      <div class="third_section" id="A_venir">
+         <h2>Obtenez votre site</h2>
          <div class="theme">
             <div class="theme_text">
-               <p> <span> Plus </span> de 100 thèmes et template à <br> moindre coût pour votre site internet<p>
+               <p> <span> Plus </span> de 1000 thèmes et templates à <br> moindre coût pour votre site internet.<p>
                <button>Voir plus</button>
             </div>
             <div class="text_image">
@@ -838,7 +840,7 @@
          </div>
       </div>
 
-      <div class="contact">
+      <div class="contact" id="nous_contacter">
          <p>Nous contacter</p>
          <div class="contacting">
             <img src="images/img_contact.png" alt="">
@@ -851,7 +853,7 @@
                   <input type="text" placeholder="Prénom">
                </div>
                <div class="form_email">
-                  <input type="email" placeholder="Prénom">
+                  <input type="email" placeholder="Email">
                </div>
                <div class="form_message">
                   <textarea name="Message" placeholder="Votre message" id="" cols="38" rows="10"></textarea>
@@ -862,6 +864,7 @@
             </form>
          </div>
       </div>
+
    </div>
 
 </body>
@@ -871,18 +874,24 @@
          <img src="images/Logo_TS-01.png" alt="">
       </div>
       <div class="footer1_items">
-        <a href="">Accueil</a> 
-        <a href="">Qui sommes-nous ?</a> 
-        <a href="">Services</a>
-        <a href="">A venir</a> 
+        <a href="#">Accueil</a> 
+        <a href="#Qui_sommes_nous_?">Qui sommes-nous ?</a> 
+        <a href="#services">Services</a>
+        <a href="#A_venir">A venir</a> 
       </div>
    </div>
-   <!-- <div class="footer2">
-         <img src="icon/facebook.png" alt="">
-         <img src="icon/linkedin.png" alt="">
-         <img src="icon/instagram.png" alt="">
-         <img src="icon/twitter.png" alt="">
-   </div> -->
+   <div class="footer2">
+
+      <div class="footer_para">
+         <p>2021-2022 <a href="#"> TECHSHELTER</a> All Rights Reserved</p>
+      </div>
+      <div class="footer2_1"> 
+           <a href="https://www.facebook.com/techshelter.africa"><img src="icon/facebook.png" alt="" class="facebook"></a> 
+          <a href="https://www.linkedin.com/company/techshelter/mycompany/"><img src="icon/linkedin.png" alt="" class="linkedin"></a>
+           <a href="https://www.instagram.com/techshelter.africa/"><img src="icon/instagram.png" alt="" class="instagram"></a>
+           <a href="https://twitter.com/techshelter_"><img src="icon/twitter.png" alt="" class="twitter"></a>
+      </div>
+</div>
 </footer>
 <script src="./anim.js"></script>
 </html>
