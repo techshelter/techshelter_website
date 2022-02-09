@@ -114,7 +114,7 @@ body {
 {
   z-index: 1;
 }
-
+/* 
 .cursor
 {
   position: absolute;
@@ -122,17 +122,12 @@ body {
   left: 0;
   width: 100px;
   height: 100px;
-  /* background: red; */
   border-radius: 50%;
   pointer-events: none;
   cursor: none;
   z-index: 30;
-}
+} */
 
-.hide-cursor
-{
-  cursor: none;
-}
 
 .cloud
 {
@@ -171,8 +166,24 @@ body {
   background-color: black;
   z-index: 30;
   clip-path: circle(100px at var(--x) var(--y));
-  box-shadow: 0 0 5px 10px #555;
+  transform: scale(1);
+	/* animation: pulse 2s infinite;
+  text-decoration: none; */
 }
+
+/* @keyframes pulse {
+  0%{
+    transform: scale(0.9);
+  }
+  70%{
+    transform: scale(1);
+  }
+
+  100%{
+    transform: scale(0.9);
+  }
+
+} */
 
 .my-orange
 {
@@ -197,10 +208,12 @@ body {
 {
   background-color: #f4971e;
   position: relative;
+  
 }
 
 .prime:hover ~ .cursor  {
   transform: scale(2);
+  
 }
 
 .rivers{
@@ -519,6 +532,7 @@ form button
   border-radius: 10px;
   background-color:#FF4E4E ;
   margin-top: 10px;
+  cursor: pointer;
 }
 .footer1
 {
