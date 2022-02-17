@@ -24,65 +24,7 @@ body {
   align-items: center;
   z-index: 10000;
 } 
-/*========******burger menu*****======*/
-.menu-btn
-{
-  position: relative;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  transition: all .5s ease-in-out;
-  z-index: 10000;
-  margin-top: 4vh;
-}
-.menu-btn_burger
-{
-  width: 50px;
-  height: 6px;
-  background:#fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47,.2);
-  transition: all .5s ease-in-out;
-}
-.menu-btn_burger::before,
-.menu-btn_burger::after
-{
-  content: ''; 
-  position: absolute;
-  width: 50px;
-  height: 6px;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-  transform-origin: all .5s ease-in-out;
-}
-.menu-btn_burger::before
-{
-  transform: translateY(-16px);
-}
-.menu-btn_burger::after
-{
-  transform: translateY(16px);
-}
-/* ======burger aminate=========*/
-.menu-btn.open .menu-btn_burger
-{
-  transform: translateX(-50px);
-  background: transparent; 
-  box-shadow: none;
-}
-.menu-btn.open .menu-btn_burger::before
-{
-  transform: rotate(45deg) translate(35px, -35px);
-}
-.menu-btn.open .menu-btn_burger::after
-{
-  transform: rotate(-45deg) translate(35px, 35px);
-}
-/*================ En burger menu ================*/
+
 .mobile_banner
   {
     display: none;
@@ -207,7 +149,7 @@ body {
 
 .cloud img
 {
-  height: 100%;
+  height: 80%;
    width: 100%; 
    object-fit: cover;
    
@@ -237,25 +179,14 @@ body {
   text-decoration: none; */
 }
 
-/* @keyframes pulse {
-  0%{
-    transform: scale(0.9);
-  }
-  70%{
-    transform: scale(1);
-  }
 
-  100%{
-    transform: scale(0.9);
-  }
-
-} */
 
 .my-orange
 {
   min-width: 100vw;
   position:absolute;
   width: 100%;
+  z-index: 1;
   
 } 
 .my-orange img{
@@ -503,6 +434,7 @@ section::before{
 .partner h2
 {
   text-align: center;
+  margin-top: 7vh;
   margin-bottom: 10vh  ;
 }
 .first_partner
@@ -539,7 +471,7 @@ section::before{
 
 .first_partner img
 {
-  margin-right: 0vw;
+  margin-right: 5vw;
 }
 .contacting
 {
@@ -725,7 +657,6 @@ margin-left: 10vw;
   min-width: 100vw;
   position:absolute;
   width: 100%;
-  z-index: 1;
   
   } 
   .my-orange img{
@@ -1480,6 +1411,66 @@ body {
             height: 50px;
             margin: 0.2em;
           }
+          /*========******burger menu*****======*/
+.menu-btn
+{
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  z-index: 10000;
+  margin-top: 4vh;
+  
+}
+.menu-btn_burger
+{
+  width: 50px;
+  height: 6px;
+  background:#fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47,.2);
+  transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after
+{
+  content: ''; 
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transform-origin: all .5s ease-in-out;
+}
+.menu-btn_burger::before
+{
+  transform: translateY(-16px);
+}
+.menu-btn_burger::after
+{
+  transform: translateY(16px);
+}
+/* ======burger aminate=========*/
+.menu-btn.open .menu-btn_burger
+{
+  transform: translateX(-50px);
+  background: transparent; 
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn_burger::before
+{
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn_burger::after
+{
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+/*================ En burger menu ================*/
         
       
 }

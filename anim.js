@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const x = event.pageX
     const y = event.pageY
     inverse.style.setProperty('--x', `${x}px`)
-    inverse.style.setProperty('--y', `${y}px`)
+    inverse.style.setProperty('--y', `${y -110}px`)
     /*=============mouse timer ====================*/
       var timer
       function mouseStopped() {
@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
       menuBtn.classList.remove('open')
       menuMobile.style.display = 'none'
       menuOpen = false;
+      
     }
   })
 })
