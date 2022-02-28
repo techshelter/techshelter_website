@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   margin: 0;
   padding: 0;
@@ -37,17 +38,7 @@ body {
   z-index: 2;
   margin-top: -45vh;
 }
-/* .tech 
-{
-  position: absolute;
-  color: rgb(255, 255, 255);
-  font-size: 10vh;
-  text-align: center;
-  line-height: 0.55em;
-  z-index: 1;
-  top: 20vh;
-  font-weight: bolder;
-} */
+
 #header ul
 {
   display: flex;
@@ -120,22 +111,8 @@ body {
 
 .chauve
 {
-  z-index: 1;
+  z-index: 2;
 }
-/* 
-.cursor
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  pointer-events: none;
-  cursor: none;
-  z-index: 30;
-} */
-
 
 .cloud
 {
@@ -179,8 +156,6 @@ body {
   text-decoration: none; */
 }
 
-
-
 .my-orange
 {
   min-width: 100vw;
@@ -205,12 +180,10 @@ body {
 {
   background-color: #f4971e;
   position: relative;
-  
 }
 
 .prime:hover ~ .cursor  {
-  transform: scale(2);
-  
+  transform: scale(2); 
 }
 
 .rivers{
@@ -230,10 +203,9 @@ body {
 
 .sec{
   position: relative;
-  padding: 100px;
+  padding: 20px;
   background: white;
 }
-
 
 section {
   position: relative;
@@ -260,348 +232,7 @@ section::before{
   /* clip-path: circle(40px at center); */
 }
 
-.section_principal
-{
-  display: flex;
-}
 
-.section_principal p
-{
-  font-size: 15px;
-  color: #151439;
-  width: 450px;
-  margin-top: 30px;
-}
-
-.section_principal svg
-{
- width: 40%;
- height: 30%;
- margin-left: 150px;
- 
-}
-
-.second_section
-{
-  display: flex;
-  margin-top: 40vh;
-}
-.second_section h3
-{
-  margin-top: 3vh;
-  margin-bottom: 4vh;
-}
-.second_section h2
-{
-  color: #251E85;
-  
-}
-
-.chips{
-  width: 350px;
-  height: 350px;
-  position: absolute;
-}
-
-.service1
-{
-  display: flex;
-  margin-left: 30vw;
-  margin-top: 10vh;
-}
-
-.services_it
-{
-  border-radius: 0px 0px 20px 20px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-  margin-right: 3vw;
-  text-align: center;
-  font-size: 13px;
-  width: 20vw;
-  
-}
-
-.services_it img
-{
-  width: 50px ;
-  height: 50px;
-  
-}
-
-.service_integration
-{
-  border-radius: 0px 0px 20px 20px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  font-size: 13px;
-  width: 20vw;
- 
-}
-.service_integration img
-{
-  width: 50px ;
-  height: 50px;
-}
-
-.service2
-{
-  display: flex;
-  margin-left: 30vw;
-}
-.service_web360 img
-{
-  width: 50px ;
-  height: 50px;
-}
-
-.service_web360
-{
-  margin-top: 10vh;
-  border-radius: 0px 0px 20px 20px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-  margin-right: 3vw;
-  text-align: center;
-  font-size: 13px;
-  width: 20vw;
-}
-.service_expertise img
-{
-  width: 50px ;
-  height: 50px;
-}
-
-.service_expertise
-{
-  margin-top: 10vh;
-  border-radius: 0px 0px 20px 20px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  font-size: 13px;
-  width: 20vw;
-  padding: 3vh 0;
-
-}
-
-.theme_text span
-{
-  color: rgb(226, 60, 165);
-}
-.theme_text button
-{
-  border: none;
-  color: white;
-  padding: 10px 50px 10px 50px;
-  border-radius: 10px;
-  background-color:#FF4E4E ;
-  margin-top: 20px;
-}
-
-.theme_text button:hover
-{
- background-color: #f4971e;
-}
-
-.third_section h2
-{
-  text-align: center;
-  margin-top: 40vh;
-}
-.theme{
-  position: relative ;
-  display: flex;
-}
-.theme_text img{
-  display: none;
-}
-.text_image img
-{
-  width: 25vw;
-  height: 25vw;
-}
-.theme_text
-{
-  margin-right: 10vw;
-  margin-left:15vw ;
-  margin-top: 100px;
-}
-
-.theme_text p
-{
-  font-size: 20px;
-  text-align: center;
-}
-
-.partner h2
-{
-  text-align: center;
-  margin-top: 7vh;
-  margin-bottom: 10vh  ;
-}
-.first_partner
-{
-  position: absolute;
-  display: flex;
-  height: 65px;
-  width: 65px;
-  margin-left: 16vw;
-}
-
-.second_partner
-{
-  display: flex;
-  height: 50px;
-  width: 50px;
-  margin-left: 16vw;
-  margin-top: 30vh;
-}
-
-.second_partner img
-{
-  margin-right: 5vw;
-
-}
-.groupe
-{
-  display: none;
-}
-.mediafrance
-{
-  height: 40px;
-}
-
-.first_partner img
-{
-  margin-right: 5vw;
-}
-.contacting
-{
-  position: relative;
-  display: flex;
-  margin-left: 10vw;
-  margin-top: 10vh;
-}
-.contacting img
-{
-  width: 25vw;
-  height: 40vh;
-  margin-right: 10vw;
-  margin-top: 15vh;
-}
-
-.contact p
-{
-  text-align: center;
-  margin-top: 10vh;
-  font-size: 30px;
-  font-weight:bold ;
-  
-}
-
-.myform input
-{
-  border-radius: 5px;
-  padding: 10px;
-  width: 35vw;
-  margin-top: 3vh;
-  border-color: gray;
-}
-
-.form_last input
-{
-  border-radius: 5px;
-  padding: 10px;
-  width: 35vw;
-}
-
-textarea
-{
-  border-radius: 10px;
-  margin-top: 3vh;
-  padding-top: 50px;
-  padding-left: 20px;
-  width: 35vw;
-  height: 30vh;
-}
-.form_email input
-{
-  border-radius: 5px;
-  padding: 10px;
-  width: 35vw;
-}
-form button
-{
-  border: none;
-  color: white;
-  padding: 10px 50px 10px 50px;
-  border-radius: 10px;
-  background-color:#FF4E4E ;
-  margin-top: 10px;
-  cursor: pointer;
-}
-.footer1
-{
-  position: relative;
-  display: flex;
-}
-.footer1_items
-{
-  display: flex;
-  margin-top: 1vh;
-}
-.footer1_items a
-{
-  text-decoration: none;
-  color: gray;
-}
-.footer1_items a:hover
-{
-  color:red;
-}
-.footer1_items
-{
-  text-indent: 50px;
-}
- .footer1 img
-{
-width: 150px;
-height: 50px;
-margin-right: 30vw;
-margin-left: 10vw;
-}
-.footer2
-{
-  position: relative;
-  display: block;
-  margin-left: 10vw;
-}
-.footer2_1 img
-{ 
-  width: 25px;
-  height: 25px;
-  margin: 0.2em;
-}
-/* .instagram:hover {
-  color: #e11d74;
-}
-
-.twitter:hover {
-  color: #00adb5;
-}
-.linkedin:hover {
-  color: #04009a;
-} */
-.footer_para
-{
-  width: 100%;
-  margin-right: -20vw;
-  text-align: center;
-  font-size: 12px;
-}
-.footer_para a
-{
-  text-decoration: none;
-  color: red;
-}
 /* ================== IPad screen ===================== */
 
 @media  only screen and (max-width: 1024px) {
@@ -753,305 +384,7 @@ body {
       background-color: white;
       color: gray;
     }
-
-
-    .sec{
-      position: relative;
-      padding: 0px;
-      background: white;
-      
-    }
-    .section_principal
-    {
-      display: block;
-      width: 100%;
-    }
-    .p_title {
-      text-align: center;
-      margin-left: 0vw;
-      color: #251E85;
-      font-size: 40px;
-      font-weight: bold;
-    }
-
-    .section_principal p 
-      {
-        font-size: 25px;
-        color: #151439;
-        width: 100%;
-        margin-top: 30px;
-        padding: 20px;
-      }
-  .section_principal svg
-    {
-    width: 95%;
-    height: 30%;
-    margin-left: 20px;
-    }
-  .second_section 
-    {
-        display: block;
-        margin-top: 10vh;
-    }
-
-  .second_section h2 
-    {
-      color: #251E85;
-      margin-left: 7vw;
-      font-size: 45px;
-    }
   
-  .chips
-    {
-      display: block;
-      margin-top: 5vh;
-      width: 90%;
-      height: 70%;
-      position: inherit;
-      margin-left: 5vh;
-      
-    }
-  .service1
-    {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: 0vw;
-      margin-top: 10vh;
-      justify-content: center;
-    }
-
-    .services_it {
-      border-radius: 0px 0px 20px 20px;
-      box-shadow: 0 5px 5px rgb(0 0 0 / 40%);
-      margin-left: 0;
-      text-align: center;
-      font-size: 25px;
-      width: 90%;
-      margin-bottom: 5vh;
-      padding: 3vh 0;
-    }
-    .services_it img
-      {
-        width: 100px ;
-        height: 100px;
-        
-      }
-      .service_integration
-      {
-        border-radius: 0px 0px 20px 20px;
-        box-shadow: 0 5px 5px rgb(0 0 0 / 40%);
-        margin-left: 0;
-        text-align: center;
-        font-size: 25px;
-        width: 90%;
-        margin-bottom: 5vh;
-        padding: 3vh 0;  
-     }
-     .service_integration img
-        {
-          width: 100px ;
-          height: 100px;
-        }
-     .service2 
-        {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          margin-left: 0vw;
-        }
-     .service_web360 
-        {
-          border-radius: 0px 0px 20px 20px;
-          box-shadow: 0 5px 5px rgb(0 0 0 / 40%);
-          margin-left: 0;
-          text-align: center;
-          font-size: 25px;
-          width: 90%;
-          margin-bottom: 5vh;
-          padding: 3vh 0;
-        }
-      .service_web360 img 
-        {
-          width: 100px ;
-          height: 100px;
-        }
-      .service_expertise
-      {
-        border-radius: 0px 0px 20px 20px;
-        box-shadow: 0 5px 5px rgb(0 0 0 / 40%);
-        margin-left: 0;
-        text-align: center;
-        font-size: 25px;
-        width: 90%;
-        margin-bottom: 5vh;
-        padding: 3vh 0;
-      }
-      .service_expertise img 
-        {
-          width: 100px ;
-          height: 100px;
-        }
-
-      .third_section h2
-        {
-          font-size: 30px;
-          text-align: unset;
-          margin-top: 5vh;
-          margin-left: 6vw;
-        }
-      .theme 
-        {
-            position: relative;
-            display: block;
-        }  
-      .theme_text p
-        {
-          font-size: 27px;
-        }
-
-      .text_image img
-        {
-          display: none;
-        }
-      .theme_text button
-        {
-          border: none;
-          color: white;
-          padding: 20px 50px 20px 50px;
-          border-radius: 10px;
-          background-color:#FF4E4E ;
-          margin-top: 20px;
-          font-size: 25px;
-          margin-bottom: 5vh;
-        }
-        .menu-btn{
-          display: none;
-        }
-        
-      .theme_text
-          {
-            margin-top: 5vh;
-            margin-right: 0px;
-            margin-left: 3vh;
-          }
-
-       .first_partner
-          {
-            position: absolute;
-            display: unset;
-            height: 65px;
-            width: 65px;
-            margin-left: 0vw;
-          }
-
-
-       .partner
-       {
-         font-size: 22px;
-         margin-bottom: 0vh;
-       }   
-      .partner h2
-        {
-          text-align: unset;
-          margin-bottom: 5vh ;
-          margin-left: 5vw;
-        }
-
-        .sipad, .lasunday, .visibleo, .carrefour, .carrefour, .ey, .silverprod, .mediafrance, .molitor
-        {
-          display: none;
-        }
-        .groupe
-        {
-
-          width: 90vw;
-          display: unset;
-          margin-left: 4vw;
-        }
-
-      .contacting img
-        {
-          display: none;
-        }
-        
-        .contact p
-          {
-            text-align: center;
-            margin-top: 10vh;
-            font-size: 30px;
-            font-weight:bold ;
-          }
-
-          textarea
-          {
-            border-radius: 10px;
-            margin-top: 3vh;
-            padding-top: 50px;
-            padding-left: 20px;
-            width: 65vw;
-            height: 30vh;
-            font-size: 30px;
-          }
-          form button
-            {
-              border: none;
-              color: white;
-              padding: 20px 50px 20px 50px;
-              border-radius: 10px;
-              background-color:#FF4E4E ;
-              margin-top: 10px;
-              cursor: pointer;
-              font-size: 25px;
-            }
-          .myform input
-        {
-          width: 82vw; 
-          height: 7vh;
-          font-size: 30px;
-          border-radius: 10px;
-
-        }
-        
-          .footer1_items
-          {
-            display: none;
-          }
-
-          .footer_para
-          {
-            margin-right: 0px;
-            margin-top: 5vh;
-          }
-          .footer_logo
-          {
-            display: none;
-          }
-          .footer_para
-            {
-              width: 100%;
-              margin-right: -20vw;
-              text-align: center;
-              font-size: 25px;
-              margin-bottom: 5vh;
-            }
-            .footer2_1
-            {
-              position: relative;
-              display: flex;
-              padding: 2px;
-              width: 100%;
-              margin-left: 0vw;
-              margin-top: 5vh;
-              justify-content: center;
-            }
-        .footer2_1 img
-          { 
-            width: 60px;
-            height: 60px;
-            margin: 0.2em;
-          }
-}
-
 @media only screen and (max-width: 500px)  {
   body 
   {
@@ -1069,7 +402,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 100vh;
+    height: 70vh;
     display: none;
   }
   .second_header li
@@ -1470,7 +803,7 @@ body {
 {
   transform: rotate(-45deg) translate(35px, 35px);
 }
+}
+}
 /*================ En burger menu ================*/
         
-      
-}
