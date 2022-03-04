@@ -617,7 +617,7 @@ body {
 {
   width: 60px;
   height: 50px;
-  margin:270px;
+  margin:290px 270px 270px 270px;
   margin-bottom: 420px;
 }
 
@@ -800,7 +800,7 @@ section::before{
 
   .container img{
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 65%;
     margin-top: 0vh;
   }
@@ -823,7 +823,7 @@ section::before{
     height: 100%;
     position: absolute;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     justify-content: center;
     align-items: center ;
   }
@@ -833,7 +833,7 @@ section::before{
     height: 75%;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 
   .inverse {
@@ -854,7 +854,7 @@ section::before{
     margin-left: 25vw;
     position: absolute;
     width: 30vw;
-    height: 10vh;
+    height: 8vh;
     z-index: 2;
     margin-top: -18vh;
   }
