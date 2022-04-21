@@ -15,10 +15,8 @@ document.getElementById('contactBtn').addEventListener('click', async function(e
     const response = await request.text()
   
     if (response){
-      alert('Message envoyé avec success')
+      alert('message envoyé avec succès')
     
     }
   
   })
-
-  
