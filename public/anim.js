@@ -12,34 +12,61 @@ document.addEventListener('DOMContentLoaded', function() {
   let bridgeTop = parseInt(getComputedStyle(bridges[0]).marginBottom.replace('px', ''))
   const first_mt = parseInt(getComputedStyle(starss[0]).marginTop.replace('px', ''))
   const second_mt = parseInt(getComputedStyle(chauves[0]).marginTop.replace('px', ''))
+
+  let navTop = document.getElementById('navScroll')
+  let elementTop = document.getElementById('topElement')
+  let firstText = document.getElementById('first-Text')
+  var prevScrollpos = window.pageYOffset
   window.addEventListener('scroll', function() {
-    window.addEventListener('scroll', function(){
-      let value = window.scrollY
-      buildings.forEach((building) => {  
-        building.style.marginTop = buildingTop + value*0.4 + 'px'
-      })
+    let value = window.scrollY
+    heightOffset = elementTop.offsetHeight
+    var currentScrollPos = window.pageYOffset;
+
+    if(value > heightOffset) {    
+      if(value > (firstText.offsetHeight + elementTop.offsetHeight)){
+        if (prevScrollpos < currentScrollPos) {
+            navTop.classList.add('-top-96')
+            navTop.classList.remove('top-0')
+          } else {
+            navTop.classList.remove('-top-96')
+            navTop.classList.add('top-0')
+          }
+        prevScrollpos = currentScrollPos
+      }else{
+        navTop.classList.remove('-top-96')
+        navTop.classList.add('top-0')
+      }
       
-      titles.forEach((title) => {
-        title.style.top = titleTop + value*1.2 + 'px'
-      })
+    }else{
+      navTop.classList.add('-top-96')
+      navTop.classList.remove('top-0')
+    }
 
-      rivers.forEach((river) => {
-        river.style.bottom = riverTop + value*0.1 + 'px'
-      })
 
-      bridges.forEach((bridge) => {
-        bridge.style.marginBottom = bridgeTop - value*0.5 + 'px'
-      })
-
-      starss.forEach((stars) => {
-        stars.style.marginTop = first_mt+40+(value * 4) + 'px'
-      })
-
-      chauves.forEach((chauves) => {
-        chauves.style.marginTop = second_mt+40+(value * 4) + 'px'
-      })
-
+    buildings.forEach((building) => {  
+      building.style.marginTop = buildingTop + value*0.4 + 'px'
     })
+    
+    titles.forEach((title) => {
+      title.style.top = titleTop + value*1.2 + 'px'
+    })
+
+    rivers.forEach((river) => {
+      river.style.bottom = riverTop + value*0.1 + 'px'
+    })
+
+    bridges.forEach((bridge) => {
+      bridge.style.marginBottom = bridgeTop - value*0.5 + 'px'
+    })
+
+    starss.forEach((stars) => {
+      stars.style.marginTop = first_mt+40+(value * 4) + 'px'
+    })
+
+    chauves.forEach((chauves) => {
+      chauves.style.marginTop = second_mt+40+(value * 4) + 'px'
+    })
+
   })
 /*=========== loop mode xray ===============*/
   const cursor = document.querySelector('.cursor')
@@ -68,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
         inverse.style.visibility =""
         clearTimeout(timer)
         timer=setTimeout(mouseStopped,500)
-     })
+    })
   })
   const menuBtn = document.querySelector ('.menu-btn')
   const menuMobile = document.querySelector('.second_header')
@@ -85,5 +112,20 @@ document.addEventListener('DOMContentLoaded', function() {
       
     }
   })
-  
+  document.addEventListener("click", function(e){
+    if ((e.target.id == 'openModal') || (e.target.id == 'closeModal') || (e.target.id == 'closeModal2') || (e.target.id == 'defaultModal') || (e.target.id == 'closingModal')) {
+      toggleModals()
+    }
+  },false)
+
+
+  function toggleModals(){
+    if (document.getElementById('defaultModal').classList.contains('hidden')){
+      document.getElementById('defaultModal').classList.remove('hidden')
+      document.getElementById('defaultModal').classList.add('flex')
+    }else{
+      document.getElementById('defaultModal').classList.add('hidden')
+      document.getElementById('defaultModal').classList.remove('flex')
+    }
+  }
 })

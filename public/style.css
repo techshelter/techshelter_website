@@ -26,7 +26,12 @@ body {
   align-items: center;
   z-index: 10000;
 } 
-
+.nav-scroll{
+  z-index: 10001
+}
+.themodal{
+  z-index: 10002;
+}
 .mobile_banner
   {
     display: none;
