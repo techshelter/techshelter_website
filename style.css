@@ -287,8 +287,7 @@ section::before{
   .container img{
     object-fit: cover;
     height: 65%;
-    margin-top: 0vh;
-    width: 70%;
+    margin-top: 0vh;  
   }
   .my-orange
   {
